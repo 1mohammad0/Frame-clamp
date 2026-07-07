@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>فریم‌گیر — دانلود تامنیل یوتیوب و آپارات</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="sprockets sprockets-top" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="hero">
+      <div class="hero-eyebrow">فریم ۰۰۱ / تامنیل‌یاب</div>
+      <h1 class="hero-title">فریم‌گیر</h1>
+      <p class="hero-sub">لینک ویدیوی یوتیوب یا آپارات رو بده، تامنیلش رو با بهترین کیفیت دانلود کن.</p>
+    </header>
+
+    <section class="panel">
+      <form id="thumb-form" class="input-row" autocomplete="off">
+        <input
+          id="video-url"
+          type="text"
+          inputmode="url"
+          placeholder="https://www.youtube.com/watch?v=... یا https://www.aparat.com/v/..."
+          aria-label="لینک ویدیو"
+        />
+        <button type="submit" id="submit-btn">
+          <span class="btn-label">گرفتن تامنیل</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+      </form>
+      <p class="hint">پلتفرم‌های پشتیبانی‌شده: <span class="tag">YouTube</span><span class="tag">Aparat</span></p>
+      <p id="error-box" class="error-box" hidden></p>
+    </section>
+
+    <section id="results" class="results" hidden>
+      <div class="results-head">
+        <span id="platform-badge" class="platform-badge"></span>
+        <span id="video-id" class="video-id"></span>
+      </div>
+      <div id="filmstrip" class="filmstrip"></div>
+    </section>
+
+    <section id="skeleton" class="skeleton" hidden>
+      <div class="skeleton-strip">
+        <div class="skeleton-frame"></div>
+        <div class="skeleton-frame"></div>
+        <div class="skeleton-frame"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>ساخته‌شده برای دانلود سریع تامنیل — بدون نیاز به نصب چیزی.</span>
+  </footer>
+
+  <div class="sprockets sprockets-bottom" aria-hidden="true"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
